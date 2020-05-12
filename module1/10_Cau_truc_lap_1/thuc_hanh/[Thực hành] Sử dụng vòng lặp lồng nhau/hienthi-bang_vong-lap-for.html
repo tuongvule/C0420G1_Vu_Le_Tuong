@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien_thi_bang</title>
+</head>
+<body>
+<script>
+    // let i;
+    // let j;
+    // for(i=1;i<=10;i++){
+    //     for(j=1;j<=10;j++){
+    //         document.write(" " +(i*j));
+    //     }
+    //     document.write("<br/>");
+    // }
+    let sout;
+    sout = "<table border='1' width='500' height='400' cellspacing='0' cellpadding='3'>"
+    // Thuộc tính border="1" là khai báo đường viền của table
+    // Thuộc tính cellspacing="0" là khai báo khoảng cách giữa viền trên và viền dưới của đường viền
+    // Thuộc tính cellpadding="3" là khai báo khoảng cách giữa nội dung trong ô so với đường viền
+    // Thuộc tính Width = "300" là khai báo độ rộng của bảng (38px >-> 1+ cm)
+    for (i=1;i<=10;i++){
+        sout = sout + "<tr>";
+        for(j=1;j<=10;j++){
+            sout = sout + "<td>" + i*j + "<td/>";
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>

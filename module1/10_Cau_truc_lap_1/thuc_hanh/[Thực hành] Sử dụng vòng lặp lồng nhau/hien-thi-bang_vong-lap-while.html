@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien-thi-bang_vong-lap-while</title>
+</head>
+<body>
+<script>
+    let sout, i, j;
+    sout = "<table border='1' cellpadding='3' cellspacing='0'  width='400'/>"
+    // Thuộc tính border="1" là khai báo đường viền của table
+    // Thuộc tính cellspacing="0" là khai báo khoảng cách giữa viền trên và viền dưới của đường viền
+    // Thuộc tính cellpadding="3" là khai báo khoảng cách giữa nội dung trong ô so với đường viền
+    // Thuộc tính Width = "300" là khai báo độ rộng của bảng (38px >-> 1+ cm)
+    i=j=1;
+    while(i<=10){
+        sout = sout + "<tr/>";
+        while(j<=10){
+            sout = sout + "<td>" +i*j + "</td>";
+            j++;
+        }
+        j=1;
+        i++;
+    }
+    sout = sout + "<table/>";
+    document.write(sout);
+</script>
+</body>
+</html>
